@@ -67,9 +67,7 @@ if __name__ == '__main__':
     my.close()
     for i in range(10):
         my.addressList[i] = my.processAddress(my.addressList[i])
-    #for i in range(10):
-        #print my.addressList[i]
     down = DownloadImg()
-    for i in range(1):
-        down.downloadImg(my.addressList[i])
-    #down.downloadImg(my.addressList[9])
+    want = raw_input("Which pic do you want?(1~10)\n")
+    want = int(want) % 10 - 1
+    down.downloadImg(my.addressList[want])
