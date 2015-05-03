@@ -1,2 +1,4 @@
-test.py
-img.jpg
+python_cli_ver/test.py
+python_cli_ver/img.jpg
+java_ver/.idea/*
+java_ver/java_ver.iml
