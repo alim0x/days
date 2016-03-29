@@ -6,6 +6,7 @@ import re
 import os
 import shutil
 
+
 class MyHTMLParser(HTMLParser.HTMLParser):
 
     def __init__(self):
@@ -27,7 +28,6 @@ class MyHTMLParser(HTMLParser.HTMLParser):
 
 class CheckStatus(object):
     pass
-
 
 
 class DownloadImg(object):
@@ -56,7 +56,6 @@ class DownloadImg(object):
         else:
             print 'Downloaded photo\'s size is wrong, retrying...'
             return False
-
 
 
 if __name__ == '__main__':
